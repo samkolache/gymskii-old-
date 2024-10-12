@@ -7,7 +7,7 @@ export default function NavItem({name, path}) {
             <NavLink className = {({isActive}) => {
                 return isActive ? "nav-link active" : "nav-link"
             }} to = {path}>
-                <p className="font-medium hover:text-navHover">{name}</p>
+                <p className="font-medium text-xl lg:text-base hover:text-navHover">{name}</p>
             </NavLink>
         </>
     )
