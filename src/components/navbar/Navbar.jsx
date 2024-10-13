@@ -43,8 +43,8 @@ export default function Navbar() {
                 </div>
                 </div>
                 <span 
-                className="material-icons lg:hidden cursor-pointer"
                 onClick = {toggleMenu}
+                className="material-icons lg:hidden cursor-pointer"
                 >
                   menu
                 </span>
