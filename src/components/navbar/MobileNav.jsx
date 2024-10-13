@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 export default function MobileNav({ isMenuOpen, toggleMenu }) {
     return (
         <div 
-            className={`lg:hidden flex flex-col items-center gap-5 min-h-screen w-1/2 bg-gray-100 absolute top-0 right-0 pt-10 shadow-md 
+            className={`lg:hidden z-50 flex flex-col items-center gap-5 min-h-screen w-1/2 bg-gray-100 absolute top-0 right-0 pt-10 shadow-md 
                         transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}
         >
             <ul className="flex flex-col gap-10">
