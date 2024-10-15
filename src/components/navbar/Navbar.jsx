@@ -18,7 +18,7 @@ export default function Navbar() {
                 <div className="lg:flex hidden justify-center items-center gap-6 ">
                 <ul className="flex gap-10">
                     <li>
-                        <NavItem name = "About" path = "about"  />
+                        <NavItem name = "About" path = "/about"  />
                     </li>
                     <li>
                         <NavItem name = "Features" path = "features"  />

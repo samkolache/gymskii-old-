@@ -9,7 +9,7 @@ export default function Hero() {
             <h1 className="text-white text-5xl font-bold leading-tight">
               Track <span className="text-brand">Smarter</span>, Train <span className="text-brand">Harder</span>
             </h1>
-            <p className="text-white font-medium text-lg max-w-md">
+            <p className="text-white font-medium text-lg max-w-md hidden sm:block">
               With gymskii, track your workouts, crush your goals, and see real results—all in one place.
             </p>
             <NavLink

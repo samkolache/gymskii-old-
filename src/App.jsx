@@ -4,11 +4,8 @@ import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
 import DashboardPage from "./pages/DashboardPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import WorkoutHistory from "./dash-views/WorkoutHistory";
-import About from "./home-views/About";
-import Features from "./home-views/Features";
-import Blog from "./home-views/Blog";
-import SignIn from "./home-views/SignIn";
-import SignUp from "./home-views/SignUp";
+import About from "./pages/About";
+
 
 
 const router = createBrowserRouter([
@@ -16,29 +13,6 @@ const router = createBrowserRouter([
     path: '/',
     element: <Homepage />,
     errorElement: <NotFoundPage />,
-    children: [
-      {
-        path: "about",
-        element: <About />
-      },
-      {
-        path: "features",
-        element: <Features />
-      },
-      {
-        path: "blog",
-        element: <Blog />
-      },
-      {
-        path: "sign-in",
-        element: <SignIn />
-      },
-      {
-        path: "sign-up",
-        element: <SignUp />
-      }
-
-    ]
   },
   {
     path: '/dashboard',
@@ -49,6 +23,10 @@ const router = createBrowserRouter([
         element: <WorkoutHistory />
       }
     ]
+  },
+  {
+    path: '/about',
+    element: <About />
   }
 ]);
 

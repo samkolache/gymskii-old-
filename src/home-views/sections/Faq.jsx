@@ -5,9 +5,10 @@ import workoutIllustration from '../../assets/workout-ill.png';
 export default function Faq() {
     return(
         <>
-            <h2 className="text-[40px] pt-10 font-bold">FAQ</h2>
-            <div className="grid grid-cols-2 gap-52 items-start">
-                <div className="pt-5 flex flex-col gap-5">
+        <div className="mt-10">
+            <h2 className="text-[33px] font-bold">FAQ</h2>
+            <div className="grid grid-cols-2 gap-48 items-start pt-5 ">
+                <div className=" flex flex-col gap-5">
                <FaqItem 
                     title="How does gymskii work?" 
                     p={`The gymskii dashboard works by taking your logged data (PRs on each exercise) and transforming it into detailed visuals and graphs.You can then analyze and make sure your lifts are increasing every week.\nThis is a concept known as progressive overloading.You can also take notes to track how you feel on each workout and exercise.`}
@@ -28,9 +29,14 @@ export default function Faq() {
                         </>
                     }
                />
+                 <FaqItem 
+                    title="What even is progressive overloading?" 
+                    p = {`Progressive overloading is the method of gradually increaing the difficulty in your workouts to consitently improve your strength and build muscle. You can achieve this by increasing the weight every week or doing more reps than last time. \nAs long as you are training harder than last time, you are progressively overloading! `}
+               />
                 </div>
-                <img src={workoutIllustration} alt="" className="w-[384px] h-[384px]" />
+                <img src={workoutIllustration} alt="" className="w-[384px] h-[384px] xl:w-[500px] xl:h-[500px] hidden lg:block pb-5" />
             </div>
+        </div>
             
             
         </>

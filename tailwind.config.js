@@ -16,7 +16,7 @@ export default {
         neutralLight: '#E9ECEF'
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif']
+        heading: ['Montserrat', 'sans-serif']
       }
     },
   },
