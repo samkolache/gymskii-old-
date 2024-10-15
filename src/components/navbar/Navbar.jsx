@@ -2,6 +2,7 @@ import MobileNav from "./MobileNav";
 import NavItem from "./NavItem";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import Logo from '../../assets/logo.png'
 
 export default function Navbar() {
     const [isOpen, setOpen] = useState(false)
@@ -12,7 +13,7 @@ export default function Navbar() {
         <>
             <nav className="flex justify-between items-center px-12 py-4">
                 {/* Logo */}
-                <NavLink to= "/"><h1 className='text-xl font-bold'>gym<span className='text-brand'>skii</span></h1> </NavLink>
+                <NavLink to= "/"> <img src= {Logo} alt="gymskii logo" className="w-[112px] h-[36px]" /> </NavLink>
                 
                 {/* Nav Links and CTAs */}
                 <div className="lg:flex hidden justify-center items-center gap-6 ">

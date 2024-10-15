@@ -11,8 +11,8 @@ export default function Homepage() {
     <>
       <Navbar />
       {/* Section One */}
+      <Hero />
       <div className="mx-12">
-        <Hero />
         <Features />
         <HowItWorks />
         <Faq />
