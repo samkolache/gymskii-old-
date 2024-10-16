@@ -5,6 +5,8 @@ import DashboardPage from "./pages/DashboardPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import WorkoutHistory from "./dash-views/WorkoutHistory";
 import About from "./pages/About";
+import Features from "./pages/Features";
+import Blog from "./pages/Blog";
 
 
 
@@ -27,6 +29,14 @@ const router = createBrowserRouter([
   {
     path: '/about',
     element: <About />
+  },
+  {
+    path: '/features',
+    element: <Features />
+  },
+  {
+    path: '/blog',
+    element: <Blog />
   }
 ]);
 

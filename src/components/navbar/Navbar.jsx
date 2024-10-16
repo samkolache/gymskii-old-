@@ -22,10 +22,10 @@ export default function Navbar() {
                         <NavItem name = "About" path = "/about"  />
                     </li>
                     <li>
-                        <NavItem name = "Features" path = "features"  />
+                        <NavItem name = "Features" path = "/features"  />
                     </li>
                     <li>
-                        <NavItem name = "Blog" path= "blog"  />
+                        <NavItem name = "Blog" path= "/blog"  />
                     </li>
                 </ul>
                 <div className="flex gap-6">
