@@ -7,6 +7,9 @@ import WorkoutHistory from "./dash-views/WorkoutHistory";
 import About from "./pages/About";
 import Features from "./pages/Features";
 import Blog from "./pages/Blog";
+import ProgressiveBlog from "./pages/ProgressiveBlog";
+import MobileBlog from "./pages/MobileBlog";
+import ProtienBlog from "./pages/ProtienBlog";
 
 
 
@@ -36,7 +39,19 @@ const router = createBrowserRouter([
   },
   {
     path: '/blog',
-    element: <Blog />
+    element: <Blog />,
+  },
+  {
+    path: '/blog/progressive-overload',
+    element: <ProgressiveBlog />
+  },
+  {
+    path: '/blog/mobile',
+    element: <MobileBlog />
+  },
+  {
+    path: '/blog/protien',
+    element: <ProtienBlog />
   }
 ]);
 

@@ -11,7 +11,7 @@ export default function About() {
         <>
             <Navbar />
             {/* hero */}
-            <div className="mx-auto max-w-4xl mt-24  text-center space-y-4">
+            <div className="mx-auto max-w-4xl mt-24 text-center space-y-4">
                 <h1 className="text-5xl font-bold max-w-[605px]  mx-auto">Empowering you to Track, Visualize, and Elevate your Strength Jourey</h1>
                 <p className="text-[23px] mt-2 max-w-3xl mx-auto">gymskii is your central platform for bringing together everything fitness related. Whether you are a beginner or a seasoned gym rat, anyone can benefit from gymskii's 
                     tracking and visuals
