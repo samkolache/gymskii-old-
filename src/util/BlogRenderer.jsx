@@ -25,6 +25,52 @@ export default function BlogRenderer({post}) {
             <div className="max-w-4xl mx-auto mt-4">
                 <img src= {post.coverImage} className="w-full object-cover max-h-[500px]" />
             </div>
+
+            {/* Blog Content Container */}
+            <div className="max-w-4xl flex flex-col mx-auto gap-8 mt-8">
+                {post.sections.map((section, index)=> (
+                    <div key={index} className="flex flex-col gap-2"> 
+                        <h2 className="text-[33px] font-bold">{section.heading}</h2>
+
+                        {/* Map through if section to get paragraphs */}
+                        {section.type === "section" && (
+                            <div className="flex flex-col gap-2"> 
+                                {section.content.map((paragraph, index) => (
+                                    <p key={index} className="text-[18px]">{paragraph}</p>
+                                ))}
+                            </div>
+                        )}
+
+                        {section.type === "tips" && (
+                            section.tips.map((tip, tipIdx) => (
+                                <div key={tipIdx} className="flex flex-col gap-2"> 
+                                    <h3 className="text-[23px] font-semibold">{tip.title}</h3>
+                                    {tip.steps.map((step, index) =>{
+                                        const stepParts = step.split(":");
+                                        if(stepParts.length > 1 ) {
+                                            const stepTitle = stepParts[0]
+                                            const stepDesc = stepParts[1]
+
+                                            return (
+                                                <p key={index} className="text-[18px]">
+                                                  <strong>{stepTitle}:</strong> {stepDesc}
+                                                </p>
+                                              );
+                                        } else {
+                                            return (
+                                                <p key={index} className="text-[18px]">{step}</p>
+                                            )
+                                        }
+                                    })}
+                                </div>
+                            ))
+                        )}
+
+
+                    </div>
+                ))}
+        
+            </div>
         </>
     )
 }
