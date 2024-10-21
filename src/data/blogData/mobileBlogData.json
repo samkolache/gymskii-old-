@@ -1,0 +1,29 @@
+{
+    "breadcrumb": {
+      "category": "Blog",
+      "title": "Mobile app for gymskii coming soon!"
+    },
+    "title": "Mobile app for gymskii coming soon!",
+    "author": "Sam Kotecha",
+    "intro": "We're excited to announce that a mobile app for gymskii is coming soon! The app will make it even easier to track your workouts, monitor progress, and stay motivated on the go. With features like personalized progress charts and intuitive workout logging, you'll have all the tools you need to crush your fitness goals right in your pocket.",
+    "coverImage": "ProgImg",
+    "sections": [
+      {
+        "type": "section",
+        "heading": "Why we are building a gymskii app?",
+        "content": [
+            "Hey all! We are in the planning stage for our brand new gymskii app. It will allow you to do everything on the gymskii web app, but you can now track your progress at the gym. Right now, you have to write down or remember your current PRs to track them at home. An app would make this process much better, logging your data right when you finish your set",
+            "With the gymskii mobile app, you'll no longer need to worry about forgetting your progress or carrying around a notebook. The app will give you instant access to all your workout stats, including personal records, set history, and even your weekly workout splits. You will know be able to progressively overload even better, seeing your stats real-time while you workout."
+        ]
+      },
+      {
+        "type": "section",
+        "heading": "The Future of gymskii",
+        "content": [
+            "Looking ahead, we envision Gymskii becoming the ultimate gym companion, where all workout logging happens directly in the app while you’re at the gym. No more waiting until you get home to input your sets or remember your PRs. The goal is for the mobile app to be your go-to tool during workouts, allowing you to effortlessly track every rep, set, and weight in real-time. This will make it easier to stay consistent, focused, and aware of your progress as it happens, keeping you motivated to push further every session.",
+            "At the same time, we see the Gymskii web app evolving into a powerful platform for deeper analysis and planning. After your workout, the web app will offer detailed insights into your progress, showing trends, charts, and data to help you reflect on what’s working and what needs improvement. Whether you’re analyzing your strength gains or strategizing for your next gym session, the web app will serve as your personal fitness advisor, helping you make informed decisions and plan your workouts for maximum results."
+        ]
+      }
+    ]
+  }
+  

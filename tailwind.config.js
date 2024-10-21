@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         brand: '#3175B1',
+        brand2: "#FAFAFA",
         brandSelected: '#275A8E',
         brandHover: '#EBF5FF',
         navHover: '#6195C6',

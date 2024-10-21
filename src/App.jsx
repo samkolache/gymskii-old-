@@ -10,6 +10,7 @@ import Blog from "./pages/Blog";
 import ProgressiveBlog from "./pages/ProgressiveBlog";
 import MobileBlog from "./pages/MobileBlog";
 import ProtienBlog from "./pages/ProtienBlog";
+import SignIn from "./pages/SignIn";
 
 
 
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
     element: <Blog />,
   },
   {
+    path: '/sign-in',
+    element: <SignIn />,
+  },
+  {
     path: '/blog/progressive-overload',
     element: <ProgressiveBlog />
   },
@@ -50,7 +55,7 @@ const router = createBrowserRouter([
     element: <MobileBlog />
   },
   {
-    path: '/blog/protien',
+    path: '/blog/protein',
     element: <ProtienBlog />
   }
 ]);

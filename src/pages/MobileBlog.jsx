@@ -1,12 +1,13 @@
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../home-views/sections/Footer";
 import BlogRenderer from "../util/BlogRenderer";
-import ProgressiveBlogData from "../data/blogData/progressiveBlogData.json"
-import ProgImg from '../assets/prog-overload.avif'
+import MobileBlogData from "../data/blogData/mobileBlogData.json"
+import MobileImg from '../assets/mobile.avif'
+import { NavLink } from "react-router-dom";
 
 const blogDataWithImage = {
-    ...ProgressiveBlogData,
-    coverImage: ProgImg  // Replace the coverImage placeholder with the actual imported image
+    ...MobileBlogData,
+    coverImage: MobileImg  // Replace the coverImage placeholder with the actual imported image
 };
 
 
@@ -16,6 +17,13 @@ export default function MobileBlog() {
         <>
             <Navbar />
             <BlogRenderer post = {blogDataWithImage} />
+            <div className="max-w-4xl flex flex-col mx-auto gap-8 mt-8">
+                <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2">
+                            <p className="text-[18px]">That's it for now folks, happy progressive overloading from all of us at gymskii!</p>
+                        </div>
+                    </div>
+            </div>
             <Footer />
         </>
     )

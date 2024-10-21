@@ -30,7 +30,7 @@ export default function Navbar() {
                 </ul>
                 <div className="flex gap-6">
                     <NavLink 
-                        to="sign-in" 
+                        to="/sign-in" 
                         className="border border-brand px-4 py-2 rounded-lg font-medium hover:shadow-[0_0_0_2px_rgba(52,152,219,1)] text-brand transition-shadow duration-300"
                     >
                     Sign in

@@ -30,7 +30,7 @@ export default function Blog() {
                 desc = "Come check out our plans for a gymskii mobile app! It'll be even easier to track your workouts while at the gym."
                 author = "Sam Kotecha"
                 />
-                <BlogCard img = {ProtienImg} cat = "Diet Tips" title = "How much Protien do I really need?" path = "/blog/protien"
+                <BlogCard img = {ProtienImg} cat = "Diet Tips" title = "How much Protein do I really need?" path = "/blog/protein"
                 desc = "A lot of people say different things about how much protien you really need to gain muscle. Dive into this article to learn from some offical studies"
                 author = "Sam Kotecha"
                 />

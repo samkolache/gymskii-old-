@@ -34,7 +34,7 @@ export default function BlogRenderer({post}) {
 
                         {/* Map through if section to get paragraphs */}
                         {section.type === "section" && (
-                            <div className="flex flex-col gap-2"> 
+                            <div className="flex flex-col gap-4"> 
                                 {section.content.map((paragraph, index) => (
                                     <p key={index} className="text-[18px]">{paragraph}</p>
                                 ))}
@@ -43,7 +43,7 @@ export default function BlogRenderer({post}) {
 
                         {section.type === "tips" && (
                             section.tips.map((tip, tipIdx) => (
-                                <div key={tipIdx} className="flex flex-col gap-2"> 
+                                <div key={tipIdx} className="flex flex-col gap-4"> 
                                     <h3 className="text-[23px] font-semibold">{tip.title}</h3>
                                     {tip.steps.map((step, index) =>{
                                         const stepParts = step.split(":");
