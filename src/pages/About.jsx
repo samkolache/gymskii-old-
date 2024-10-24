@@ -2,8 +2,8 @@ import Navbar from "../components/navbar/Navbar";
 import Footer from "../home-views/sections/Footer";
 import aboutImg from '../assets/about-us-img.jpg'
 import { NavLink } from "react-router-dom";
-import OverloadImg from '../assets/workout-ill.png'
-import StatsImg from '../assets/stats-ill.png'
+import OverloadImg from '../assets/workout-ill.svg'
+import StatsImg from '../assets/stats-ill.svg'
 import CeoIMG from '../assets/ceo-ill.png'
 
 export default function About() {

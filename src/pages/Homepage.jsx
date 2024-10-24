@@ -12,7 +12,7 @@ export default function Homepage() {
       <Navbar />
       {/* Section One */}
       <Hero />
-      <div className="mx-12">
+      <div>
         <Features />
         <HowItWorks />
         <Faq />

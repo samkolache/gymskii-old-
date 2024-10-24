@@ -36,7 +36,7 @@ export default function Navbar() {
                     Sign in
                     </NavLink>
                     <NavLink 
-                        to="sign-up" 
+                        to="/sign-up" 
                         className="bg-brand px-4 py-2 rounded-lg font-medium text-white hover:bg-brand600 transition duration-300 ease-in-out"
                     >
                     Sign up

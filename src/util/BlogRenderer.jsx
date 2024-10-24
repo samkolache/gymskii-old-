@@ -22,7 +22,7 @@ export default function BlogRenderer({post}) {
             </div>
             
              {/* Hero Image */}
-            <div className="max-w-4xl mx-auto mt-4">
+            <div className="max-w-4xl mx-auto mt-4 hidden md:block">
                 <img src= {post.coverImage} className="w-full object-cover max-h-[500px]" />
             </div>
 

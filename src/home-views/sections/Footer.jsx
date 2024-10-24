@@ -1,43 +1,49 @@
-import { NavLink } from "react-router-dom"
-import NavItem from "../../components/navbar/NavItem"
+import { Link, NavLink } from "react-router-dom";
 
 export default function Footer() {
-    return(
+    return (
         <>
-            <div className="bg-gray-100 mt-10">
-                <div className="flex justify-evenly">
-                    {/* logo and socials */}
-                    <div className="flex flex-col gap-7 max-w-md py-5">
-                        <div className="flex flex-col">
-                            <NavLink to= "/"><h1 className='text-xl font-bold'>gym<span className='text-brand'>skii</span></h1> </NavLink>
-                            <p className="font-semibold">Track <span className="text-brand">Smarter</span> , Train <span className="text-brand">Harder</span> </p>
-                        </div>
-                        <div className="flex justify-start items-center gap-6">
-                            <a href="https://www.instagram.com/gymskii/"><i className="fa-brands fa-instagram text-4xl "></i></a>
-                            <a href="https://x.com/gymskii_app"><i className="fa-brands fa-twitter text-4xl "></i></a>
-                            <a href="https://www.linkedin.com/company/gymskii/about/"><i className="fa-brands fa-linkedin text-4xl "></i></a>
-                        </div>
+            <div className="flex flex-col md:flex-row justify-center items-center md:items-start w-full max-w-screen-lg mx-auto">  {/* Center on desktop */}
+                
+                {/* logo and socials */}
+                <div className="flex flex-col gap-5 w-full md:w-1/3 py-5 items-center md:items-start">  {/* Adjust width for desktop */}
+                    <div className="flex flex-col items-center md:items-start">
+                        <NavLink to="/"><h1 className="text-xl font-bold">gym<span className="text-brand">skii</span></h1></NavLink>
+                        <p className="font-semibold text-center md:text-left">Track <span className="text-brand">Smarter</span>, Train <span className="text-brand">Harder</span></p>
                     </div>
-                    {/* quick links */}
-                    <div className="flex flex-col max-w-md py-5">
-                        <h2 className="font-semibold">Quick Links</h2>
-                        <ul>
-                            <li><NavItem name = "About" path = "about"  /></li> 
-                            <li><NavItem name = "Features" path = "features"  /></li>
-                            <li><NavItem name = "Blog" path= "blog"  /></li>
-                            <li><NavItem name = "Contact Us" path= "contact-us"  /></li>
-                        </ul>
+                    <div className="flex justify-center md:justify-start items-center gap-6">
+                        <a href="https://www.instagram.com/gymskii/"><i className="fa-brands fa-instagram text-4xl text-stats"></i></a>
+                        <a href="https://x.com/gymskii_app"><i className="fa-brands fa-twitter text-4xl text-stats"></i></a>
+                        <a href="https://www.linkedin.com/company/gymskii/about/"><i className="fa-brands fa-linkedin text-4xl text-stats"></i></a>
                     </div>
-                    {/* account */}
-                    <div className="flex flex-col max-w-md py-5">
-                        <h2 className="font-semibold">Account Links</h2>
-                        <ul>
-                            <li><NavItem name = "Sign in" path = "sign-in"  /></li> 
-                            <li><NavItem name = "Sign up" path = "sign-up"  /></li>
-                        </ul>
-                    </div>
+                </div>
+
+                {/* quick links */}
+                <div className="flex flex-col w-full md:w-1/3 py-5 items-center md:items-start">
+                    <h6 className="font-semibold text-lg text-brandHeading">Quick Links</h6>
+                    <ul className="text-center md:text-left">
+                        <li><FooterLink title="About" path="/about" /></li>
+                        <li><FooterLink title="Features" path="/features" /></li>
+                        <li><FooterLink title="Blog" path="/blog" /></li>
+                        <li><FooterLink title="Contact Us" path="/contact-us" /></li>
+                    </ul>
+                </div>
+
+                {/* account */}
+                <div className="flex flex-col w-full md:w-1/3 py-5 items-center md:items-start">
+                    <h6 className="font-semibold text-lg text-brandHeading">Account Links</h6>
+                    <ul className="text-center md:text-left">
+                        <li><FooterLink title="Sign in" path="/sign-in" /></li>
+                        <li><FooterLink title="Sign up" path="/sign-up" /></li>
+                    </ul>
                 </div>
             </div>
         </>
-    )
+    );
+}
+
+function FooterLink({ path, title }) {
+    return (
+        <Link className="hover:text-brand" to={path}>{title}</Link>
+    );
 }

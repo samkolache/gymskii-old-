@@ -1,68 +1,39 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
-import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
 import DashboardPage from "./pages/DashboardPage";
-import NotFoundPage from "./pages/NotFoundPage";
-import WorkoutHistory from "./dash-views/WorkoutHistory";
 import About from "./pages/About";
 import Features from "./pages/Features";
 import Blog from "./pages/Blog";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import NotFoundPage from "./pages/NotFoundPage";
 import ProgressiveBlog from "./pages/ProgressiveBlog";
 import MobileBlog from "./pages/MobileBlog";
 import ProtienBlog from "./pages/ProtienBlog";
-import SignIn from "./pages/SignIn";
+import ScrollToTop from "./util/ScrollToTop";
 
-
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Homepage />,
-    errorElement: <NotFoundPage />,
-  },
-  {
-    path: '/dashboard',
-    element: <DashboardPage />,
-    children: [
-      {
-        path: "workout-history",
-        element: <WorkoutHistory />
-      }
-    ]
-  },
-  {
-    path: '/about',
-    element: <About />
-  },
-  {
-    path: '/features',
-    element: <Features />
-  },
-  {
-    path: '/blog',
-    element: <Blog />,
-  },
-  {
-    path: '/sign-in',
-    element: <SignIn />,
-  },
-  {
-    path: '/blog/progressive-overload',
-    element: <ProgressiveBlog />
-  },
-  {
-    path: '/blog/mobile',
-    element: <MobileBlog />
-  },
-  {
-    path: '/blog/protein',
-    element: <ProtienBlog />
-  }
-]);
-
-
-export default function App() {
+function App() {
   return (
-   <RouterProvider router ={router} />
-  )
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/features" element={<Features />} />
+
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/progressive-overload" element={<ProgressiveBlog />} />
+        <Route path="/blog/mobile" element={<MobileBlog />} />
+        <Route path="/blog/protein" element={<ProtienBlog />} />
+
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/sign-up" element={<SignUp />} />
+        <Route path="*" element={<NotFoundPage />} /> {/* Catch-all for 404s */}
+      </Routes>
+    </Router>
+  );
 }
+
+export default App;

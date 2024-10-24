@@ -18,7 +18,7 @@ export default function ProgressiveBlog() {
             <div className="max-w-4xl flex flex-col mx-auto gap-8 mt-8">
                 <div className="flex flex-col gap-2">
                         <h2 className="text-[33px] font-bold">How can gymskii help?</h2>
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-4">
                             <p className="text-[18px]">gymskii offers multiple features to ensure you are progressive overloading each week. It’s simple, you train hard, track your preferred method of 
                                 overload(reps, weights), and view your stats! Gymskii offers visuals and statistics to make sure you are overloading each session
                             </p>

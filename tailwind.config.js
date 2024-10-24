@@ -8,6 +8,8 @@ export default {
     extend: {
       colors: {
         brand: '#3175B1',
+        brandHeading: '#094067',
+        stats: "#1F3B4D",
         brand2: "#FAFAFA",
         brandSelected: '#275A8E',
         brandHover: '#EBF5FF',

@@ -12,14 +12,14 @@ export default function Blog() {
             <Navbar />
             {/* Hero */}
             <div className=" max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12 mt-12">
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-8 px-5 md:px-0">
                     <h1 className="text-5xl font-bold">Articles from gym<span className="text-brand">skii</span></h1>
                     <p>Gymskiii is on a mission to simplify and supercharge your fitness journey. Explore the articles below to see what 
                         we’re building and discover helpful fitness tips to elevate your routine. Happy training!
                     </p>
                     <span className="h-[2px] bg-black w-[80px] block"></span>
                 </div>
-                <img src= {BlogImg} alt="" className="w-full" />
+                <img src= {BlogImg} alt="" className="w-full hidden md:block" />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-7xl mx-auto p-6">
                 <BlogCard img = {ProgOverload} cat = "Fitness Tips" title = "How to Progressive Overload in the Gym" path = "/blog/progressive-overload" 
