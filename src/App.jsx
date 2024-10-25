@@ -12,6 +12,7 @@ import ProgressiveBlog from "./pages/ProgressiveBlog";
 import MobileBlog from "./pages/MobileBlog";
 import ProtienBlog from "./pages/ProtienBlog";
 import ScrollToTop from "./util/ScrollToTop";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/features" element={<Features />} />
+        <Route path="/contact-us" element={<ContactUs />} />
 
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/progressive-overload" element={<ProgressiveBlog />} />

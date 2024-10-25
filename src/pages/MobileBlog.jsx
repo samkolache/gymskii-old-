@@ -17,10 +17,10 @@ export default function MobileBlog() {
         <>
             <Navbar />
             <BlogRenderer post = {blogDataWithImage} />
-            <div className="max-w-4xl flex flex-col mx-auto gap-8 mt-8">
+            <div className="max-w-4xl flex flex-col mx-auto gap-8 mt-8 mb-4 px-4 md:px-0">
                 <div className="flex flex-col gap-2">
                         <div className="flex flex-col gap-2">
-                            <p className="text-[18px]">That's it for now folks, happy progressive overloading from all of us at gymskii!</p>
+                            <p className="text-base md:text-[18px]">That's it for now folks, happy progressive overloading from all of us at gymskii!</p>
                         </div>
                     </div>
             </div>

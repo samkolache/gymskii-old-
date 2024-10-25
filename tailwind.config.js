@@ -11,6 +11,7 @@ export default {
         brandHeading: '#094067',
         stats: "#1F3B4D",
         brand2: "#FAFAFA",
+        footer: "#aeb4ac",
         brandSelected: '#275A8E',
         brandHover: '#EBF5FF',
         navHover: '#6195C6',

@@ -5,8 +5,8 @@ export default function Faq() {
     return(
         <>
         <div className="px-6 py-10 bg-gray-100">
-            <h5 className = "text-xl text-stats font-semibold text-center mb-2">GOT QUESTIONS?</h5>
-            <h2 className="text-4xl text-brandHeading font-bold text-center mb-6">We've got answers </h2>  
+            <h5 className = "text-lg md:text-xl text-stats font-semibold text-center mb-2">GOT QUESTIONS?</h5>
+            <h2 className="text-3xl md:text-4xl text-brandHeading font-bold text-center mb-6">We've got answers </h2>  
             <div className="flex flex-col items-center px-10 md:px-0 pt-4">
                 <FaqItem q = "What is gymskii?" a = "gymskii is a gym tracking platform focused on the idea of progressive overloading. Using visuals and charts, you can make sure you are getting stronger each week to ensure you're always becoming a better version of yourself. What are you waiting for? Create an account now!" 
                 />
