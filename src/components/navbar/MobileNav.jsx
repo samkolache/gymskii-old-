@@ -2,6 +2,8 @@ import NavItem from "./NavItem";
 import { NavLink } from "react-router-dom";
 
 export default function MobileNav({ isMenuOpen, toggleMenu }) {
+
+
     return (
         <div 
             className={`lg:hidden z-50 flex flex-col items-center gap-5 min-h-screen w-1/2 bg-gray-100 fixed top-0 right-0 pt-10 shadow-md 
@@ -12,6 +14,7 @@ export default function MobileNav({ isMenuOpen, toggleMenu }) {
                     <NavLink 
                         to="/about" 
                         className="text-3xl w-full block px-4 py-2"
+                        onClick={toggleMenu}
                     >
                         About
                     </NavLink>
@@ -21,6 +24,7 @@ export default function MobileNav({ isMenuOpen, toggleMenu }) {
                     <NavLink 
                         to="/features" 
                         className="text-3xl w-full block px-4 py-2"
+                        onClick={toggleMenu}
                     >
                         Features
                     </NavLink>
@@ -30,22 +34,25 @@ export default function MobileNav({ isMenuOpen, toggleMenu }) {
                     <NavLink 
                         to="/blog" 
                         className="text-3xl w-full block px-4 py-2"
+                        onClick={toggleMenu}
                     >
                         Blog
                     </NavLink>
                     <span className="material-icons">arrow_forward</span>
                 </li>
             </ul>
-            <div className="flex mt-auto pb-10 gap-3">
+            <div className="flex mt-16 pb-10 gap-3">
                 <NavLink 
                     to="/sign-in" 
                     className="border border-brand px-4 py-2 rounded-lg font-medium hover:shadow-[0_0_0_2px_rgba(52,152,219,1)] text-brand transition-shadow duration-300"
+                    onClick={toggleMenu}
                 >
                     Sign in
                 </NavLink>
                 <NavLink 
                     to="/sign-up" 
                     className="bg-brand px-4 py-2 rounded-lg font-medium text-white hover:bg-brand600 transition duration-300 ease-in-out"
+                    onClick={toggleMenu}
                 >
                     Sign up
                 </NavLink>
