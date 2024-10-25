@@ -8,7 +8,7 @@ export default function SignUp() {
             {/* Container */}
             <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
                 {/* Left Side */}
-                <div className="flex flex-col items-center justify-center bg-brand2 py-6 px-4 lg:px-8 lg:py-0">
+                <div className="flex flex-col items-center justify-center bg-brand2 pb-12 pt-24 px-4 lg:px-8 lg:py-0">
                     <h1 className="text-3xl md:text-4xl font-bold text-center lg:text-left">Hey there!</h1>
                     <p className="md:text-lg lg:text-lg mt-2 max-w-lg text-center lg:text-left">
                         Welcome to gymskii, we are excited to have you! Enter some information to get started in your progressive overload journey :)
@@ -21,7 +21,7 @@ export default function SignUp() {
                 </div>
                 
                 {/* Right Side */}
-                <div className="flex flex-col items-center justify-center mt-4 lg:mt-0 px-4 lg:px-8">
+                <div className="flex flex-col items-center justify-center mt-4 lg:mt-0 px-4 py-4 lg:px-8">
                     <h1 className="text-3xl lg:text-4xl font-bold text-center">Sign up</h1>
                     <p className="mt-2 text-center">Let's get started!</p>
                     

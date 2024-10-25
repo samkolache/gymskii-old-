@@ -15,7 +15,7 @@ export default function About() {
             <div className="mt-12">
 
                 {/* Heading Section Container */}
-                <div className="max-w-2xl text-center mx-auto px-10">
+                <div className="max-w-2xl text-center mx-auto px-10 pt-10">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">Empowering you to <span className="text-brand">Track</span>, <span className="text-brand">Visualize</span>, and <span className="text-brand">Elevate</span> your Strength Journey</h1>
                     <p className="text-lg md:text-xl text-gray-500">gymskii is your central platform for bringing together everything fitness-related. Whether you are a beginner or a seasoned gym rat, anyone can benefit from gymskii's tracking and visuals.</p>
                 </div>

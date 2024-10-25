@@ -11,7 +11,7 @@ export default function Navbar() {
     
     return(
         <>
-            <nav className="flex justify-between items-center px-12 py-4">
+            <nav className="flex justify-between items-center px-12 py-4 fixed top-0 left-0 w-full bg-white md:static md:bg-none">
                 {/* Logo */}
                 <NavLink to= "/"> <img src= {Logo} alt="gymskii logo" className="w-[112px] h-[36px]" /> </NavLink>
                 <span 
