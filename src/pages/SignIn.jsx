@@ -8,7 +8,7 @@ export default function SignIn() {
             {/* Container */}
             <div className='grid grid-cols-1 lg:grid-cols-2  min-h-screen'>
                 {/* Left Side */}
-               <div className='flex flex-col items-center justify-center bg-brand2  pt-12 px-4'>
+               <div className='flex flex-col items-center justify-center bg-brand2  pt-24 pb-12 px-4'>
                     <h1 className='text-3xl md:text-4xl font-bold'>Welcome Back!</h1>
                     <p className='md:text-lg mt-2'>Enter your email and password to access your account</p>
                     <h2 className='text-xl md:text-2xl mt-4 font-semibold text-brandHeading'>Don't have an account?</h2>
@@ -16,7 +16,7 @@ export default function SignIn() {
                     <NavLink to = "/sign-up"  className = "px-8 py-2 bg-brand text-white text-lg rounded-lg mt-2 font-semibold">Sign Up</NavLink>
                </div>
                {/* Right Side */}
-               <div className='flex flex-col items-center justify-center'>
+               <div className='flex flex-col items-center justify-center p-6'>
                     <h1 className="text-3xl font-bold">Sign in</h1>
                     <p className='mt-2'>Enter them deets!</p>
                     {/* Form */}
